@@ -113,3 +113,7 @@ i.fab {
   left: calc(50% - 40px);
   text-transform: uppercase
 }
+
+.invalid-feedback{
+  display: block
+}
