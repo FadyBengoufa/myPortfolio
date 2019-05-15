@@ -2,14 +2,12 @@
 
 @section('content')
       
-<div id="intro">
-        <div class="text-intro">
-            <h1>FADY BENGOUFA</h1>
-            <h3>Welcome to my official web site.</h3>
-        </div>
-       </div>
+       <section id="bio">
+            <h1>fady bengoufa</h1>
+            <h3>Just another programmer</h3>
+       </section>
 
-       <div class="software">
+       <section id="software" class="software">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
@@ -35,18 +33,21 @@
                        </ul>
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                        <h5>Others Languages</h5>
+                        <h5>Other Skills</h5>
                         <ul>
-                            <li>JAVA</li>
+                            <li>Git</li>
+                            <li>Java</li>
                             <li>C</li>
+                            <li>Data Structure</li>
+                            <li>Research online</li>
                         </ul>
                     </div>
                 </div>
             </div>
-       </div>
+       </section>
 
-       <div class="fixed"></div>
-       <div class="work">
+       <section class="fixed"></section>
+       <section id="mywork" class="work">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -57,42 +58,74 @@
                     </p>
                 </div>
             </div>
-            <table class="table">
+            <br>
+            <table class="table table-sm">
                 <thead class="thead">
                     <tr>
                         <th>Title</th>
-                        <th>Description</th>
                         <th>Language</th>
+                        <th>Description</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <th>project1</th>
-                        <th>Not Yet</th>
-                        <th>...</th>
+                        <th>Tetris Game</th>
+                        <th>JavaScript</th>
+                        <th>
+                        <button id="viewProject_1" class="btn btn-outline-primary btn-sm" data-toggle="modal" data-target="#tetrisModal">View</button>
+                        </th>
                     </tr>
                     <tr>
-                        <th>project2</th>
-                        <th>Not Yet</th>
-                        <th>...</th>
+                        <th>E-commerce</th>
+                        <th>Laravel</th>
+                        <th>
+                        <button id="viewProject_2" class="btn btn-outline-primary btn-sm" data-toggle="modal" data-target="#simpleModal">View</button>
+                        </th>
                     </tr>
                     <tr>
-                        <th>project3</th>
-                        <th>Not Yet</th>
-                        <th>...</th>
+                        <th>Compression File Algorithm</th>
+                        <th>C</th>
+                        <th>
+                        <button id="viewProject_3" class="btn btn-outline-primary btn-sm" data-toggle="modal" data-target="#simpleModal">View</button>
+                        </th>
                     </tr>
-                     <tr>
-                        <th>project4</th>
-                        <th>Not Yet</th>
-                        <th>...</th>
+                    <tr>
+                        <th>Chat app</th>
+                        <th>NodeJS</th>
+                        <th>
+                        <button id="viewProject_4" class="btn btn-outline-primary btn-sm" data-toggle="modal" data-target="#simpleModal">View</button>
+                        </th>
                     </tr>
-                     <tr>
-                        <th>project5</th>
-                        <th>Not Yet</th>
-                        <th>...</th>
-                    </tr>
+                    
                 </tbody>
             </table>
         </div>
-       </div>
+       </section>
+       
+        <div id="tetrisModal" class="modal fade">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Tetris Game</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                       <div class="container-fluid">
+                           <div class="row">
+                               <div class="col-xm-12 col-sm-12 col-md-6 col-lg-6" id="tetris-img">
+                                  
+                               </div>
+                               <div class="col-xm-12 col-sm-12 col-md-6 col-lg-6">
+                                  <p>Some Text Here</p>
+                                </div>
+                           </div>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 @endsection
+

@@ -16,40 +16,71 @@ a{
 #nav{
  transition: .4s;
  padding:1% 1%;
- font-size: 1.1em
+ font-size: 1.1em;
+ overflow-x: hidden
 }
 /*First Section*/
-#intro{
+#bio{
   width: 100%;
   height: 100%;
   background:url("../img/code-wallpaper-8.jpg")no-repeat center center fixed;
   background-size: cover;
+  text-align: center
 }
-.text-intro{
-  text-align: center;
-}
-.text-intro h1{
-  color: white;
-  font-size: 400%;
-  font-weight: 600;
-  letter-spacing: 1.2em;
+
+#bio h1{
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%)
-}
-.text-intro h3{
+  transform: translate(-50%,-50%);
   color: white;
-  font-weight: 300;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 20px;
+  text-transform: uppercase
+}
+@media(max-width:378px){
+  #bio h1{
+    font-size: 2.1rem;
+    letter-spacing: 5px
+  }
+}
+@media(max-width:330px){
+  #bio h1{
+    font-size: 2rem;
+    letter-spacing: 2px
+  }
+}
+#bio h3{
   position: absolute;
   bottom: 20%;
   left: 50%;
-  transform: translate(-50%,-50%)
+  transform: translate(-50%,-50%);
+  color: white;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 15px
+}
+@media(max-width:378px){
+  #bio h3{
+    font-size: 1.425rem;
+    letter-spacing: 5px
+  }
+}
+@media(max-width:330px){
+  #bio h3{
+    font-size: 1.4rem;
+    letter-spacing: 1px
+  }
 }
 /*Second Section */
 .software{
+  width: 100%;
+  height: 100%;
   text-align: center;
-  padding: 8% 0
+  padding: 10% 0
 }
 .software .container .row .col-12 h1{
   font-weight: 700;
@@ -65,8 +96,10 @@ a{
 }
 /*Fourth Section*/
 .work{
+  width: 100%;
+  height: 100%;
   text-align: center;
-  padding: 8% 0
+  padding: 10% 0
 }
 .work .container .row .col-12 h1{
   font-weight: 700;
@@ -76,6 +109,7 @@ a{
 .work .container .row .col-12 p{
   letter-spacing: 1px;
 }
+
 /*Footer Section*/
 footer{
   width: 100%;
@@ -102,7 +136,7 @@ i.fab {
 /*FORM CONTACT*/
 
 .form-contact{
-  padding: 10%
+  padding: 15% 10%
 }
 
 .form-contact .container{
@@ -112,4 +146,17 @@ i.fab {
   position: absolute;
   left: calc(50% - 40px);
   text-transform: uppercase
+}
+
+.invalid-feedback{
+  display: block
+} 
+
+/*Modal view project styling*/
+
+#tetris-img{
+  width: 100%;
+  height: 400px;
+  background: url("../img/tetris-img.png") center center no-repeat;
+  background-size: cover 
 }

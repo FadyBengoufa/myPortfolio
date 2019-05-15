@@ -13,5 +13,18 @@
             nav.style.background = "transparent";
         }
     }
+/* jquery smooth scroll */
 
+$('nav a').on('click',function(event){
+    if(this.hash !== ''){
+        event.preventDefault();
+        const speed = 800;
+        const hash = this.hash;
+
+        $('html, body').animate({
+            scrollTop:$(hash).offset().top
+        },speed);
+    }
+})
     
+/*Modal view project styling */

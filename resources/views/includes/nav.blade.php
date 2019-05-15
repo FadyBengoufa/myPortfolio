@@ -7,13 +7,13 @@
     <div class="collapse navbar-collapse" id="navbarToggler">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#bio">Bio</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Software</a>
+                <a class="nav-link" href="#software">Software</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">MyWork</a>
+                <a class="nav-link" href="#mywork">MyWork</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="/contact">Contact</a>
